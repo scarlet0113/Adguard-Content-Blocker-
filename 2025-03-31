@@ -247,6 +247,11 @@ search.naver.com##.related_ad
 @@||nate.com/download/*
 @@||nate.com/attachment/*
 
+! 밍키넷 예외 처리 (정상 콘텐츠 유지)
+@@||minkinet.*$media
+@@||minkinet.*$document
+@@||minkinet.*$script
+
 ! 뉴토끼 배너 광고 영역 차단
 ##.board-tail-banner
 ##[style="margin-bottom: 20px;"].row.row-15
@@ -268,9 +273,5 @@ search.naver.com##.related_ad
 ##ins.eas6a97888e17
 ##video
 
-! 밍키넷 예외 처리 (정상 콘텐츠 유지)
-@@||minkinet.*$media
-@@||minkinet.*$document
-@@||minkinet.*$script
 
 
