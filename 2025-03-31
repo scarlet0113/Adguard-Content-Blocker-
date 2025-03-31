@@ -247,11 +247,6 @@ search.naver.com##.related_ad
 @@||nate.com/download/*
 @@||nate.com/attachment/*
 
-! 밍키넷 예외 처리 (정상 콘텐츠 유지)
-@@||minkinet.*$media
-@@||minkinet.*$document
-@@||minkinet.*$script
-
 ! 뉴토끼 배너 광고 영역 차단
 ##.board-tail-banner
 ##[style="margin-bottom: 20px;"].row.row-15
@@ -273,5 +268,14 @@ search.naver.com##.related_ad
 ##ins.eas6a97888e17
 ##video
 
+! 뭘 건들었는지는 모르겠지만 차라리 이게 낫다...
+@@||mingky.net^$media
+@@||mingky.net^$image
+@@||mingky.net^$document
+##div.container[style="max-width:500px;"]
+##ul.row.row-cols-1.mx-auto
+##li > div.img-wrap.bg-light.na-round.mb-2
+##a[href*="rb-001.com"]
+##img[src*="mingk.xyz"]
 
 
