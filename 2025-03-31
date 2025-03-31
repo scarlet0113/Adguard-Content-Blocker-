@@ -251,3 +251,24 @@ search.naver.com##.related_ad
 ##.board-tail-banner
 ##[style="margin-bottom: 20px;"].row.row-15
 ##li:has([target]:not([href*=bbs]))
+
+! AV19 배너 광고 영역 제거
+##.col-md-3.col-sm-6.col-xs-6.text-center.banner_m
+##div#smart-channel-1
+##div.mobile-banner
+##div[style*="min-height: 1em"]
+
+! KBJSVIP 배너 광고 영역 제거
+##.col-md-3.col-sm-6.col-xs-6.text-center.banner_m
+##div.mobile-banner
+##div[id="smart-channel-1"]
+##div[style*="min-height: 1em"]
+##section.row.clearfix.top_banner
+##ins.eas6a97888e10
+##ins.eas6a97888e17
+##video
+
+! 밍키넷 예외 처리 (정상 콘텐츠 유지)
+@@||mingky.net^$media,document,script
+@@||mingky.net/video/*$subdocument
+
