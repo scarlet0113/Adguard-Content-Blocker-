@@ -269,6 +269,8 @@ search.naver.com##.related_ad
 ##video
 
 ! 밍키넷 예외 처리 (정상 콘텐츠 유지)
-@@||mingky.net^$media,document,script
-@@||mingky.net/video/*$subdocument
+@@||minkinet.*$media
+@@||minkinet.*$document
+@@||minkinet.*$script
+
 
