@@ -250,6 +250,10 @@ mail.naver.com##div[id="smart-channel-1"][style*="display: flex"]
 @@||nate.com/download/*
 @@||nate.com/attachment/*
 
+! 애니라이프 배너 영역 차단
+anilife.app##.HkbznHK
+anilife.live##.FlexFSCW.MainBnnWrap
+
 ! 뉴토끼 배너 광고 영역 차단
 @-moz-document regexp("^(https?://)?(www\\.)?newtoki\\d*\\.(com|net|org)") {
   ##.board-tail-banner
