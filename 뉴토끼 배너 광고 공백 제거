@@ -1,0 +1,5 @@
+@-moz-document regexp("^(https?://)?(www\\.)?newtoki\\d*\\.(com|net|org)") {
+  ##.board-tail-banner
+  ##[style="margin-bottom: 20px;"].row.row-15
+  ##li:has([target]:not([href*=bbs]))
+}
