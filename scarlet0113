@@ -257,3 +257,6 @@ mail.naver.com##div[style*="display: flex"]
   ##[style="margin-bottom: 20px;"].row.row-15
   ##li:has([target]:not([href*=bbs]))
 }
+
+! AV19 배너 광고 영역 제거
+av19.*##.col-md-3.col-sm-6.col-xs-6.text-center.banner_m
