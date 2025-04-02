@@ -273,6 +273,11 @@ av19.*##.col-md-3.col-sm-6.col-xs-6.text-center.banner_m
 ||ssl.pstatic.net/tveta/libs/glad/prod/gfp-core.js
 ||lcs.naver.com/m
 
+! AV19 모든 광고 제거
+av19.*##.col-md-12.mobile-banner
+av19.*##.col-md-3.col-sm-6.col-xs-6.text-center.banner_m
+||david.cdnbuzz.buzz^
+
 
 ! 밍키넷 동영상 및 썸네일 문제 해결
 mingki.net##div.col-md-3.col-sm-6.col-xs-6.text-center.banner_m
