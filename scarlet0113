@@ -233,7 +233,9 @@ search.naver.com##.related_ad
 @@||naver.com/download/*
 @@||naver.com/attachment/*
 
-! 네이버 메일 배너 공백 제거
+! 네이버 메일 광고 차단 및 오류 해결
+||ssl.pstatic.net/tveta/libs/glad/prod/gfp-core.js^$domain=mail.naver.com
+||lcs.naver.com/m^$domain=mail.naver.com
 mail.naver.com##div#smart-channel-1:style(display: none !important;)
 mail.naver.com##div[id="smart-channel-1"]
 
@@ -267,11 +269,6 @@ anilife.live##.FlexFSCW.MainBnnWrap
   ##[style="margin-bottom: 20px;"].row.row-15
   ##li:has([target]:not([href*=bbs]))
 }
-
-! AV19 광고 제거 및 오류 해결
-av19.*##.col-md-3.col-sm-6.col-xs-6.text-center.banner_m
-||ssl.pstatic.net/tveta/libs/glad/prod/gfp-core.js
-||lcs.naver.com/m
 
 ! AV19 오류 수정 및 광고 제거
 av19.*##.col-md-12.mobile-banner
