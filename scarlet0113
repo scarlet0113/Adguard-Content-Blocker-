@@ -239,7 +239,6 @@ search.naver.com##.related_ad
 mail.naver.com##div#smart-channel-1:style(display: none !important;)
 mail.naver.com##div[id="smart-channel-1"]
 
-
 ! 추가 필터
 mail.naver.com##div[id="smart-channel-1"][style]
 mail.naver.com##div[id="smart-channel-1"][style*="height"]
@@ -271,18 +270,3 @@ anilife.live##.FlexFSCW.MainBnnWrap
   ##li:has([target]:not([href*=bbs]))
 }
 
-! AV19 광고 제거 및 오류 해결
-av19.*##.col-md-12.mobile-banner
-av19.*##.col-md-3.col-sm-6.col-xs-6.text-center.banner_m
-||david.cdnbuzz.buzz^
-!@@||missav.com/ko/api/login
-!@@||missav.com/ko/api/register
-!@@||missav.com/ko/api/forget
-!@@||missav.com/api/password/update
-!@@||missav.com/api/user
-!@@||missav.com/js/app.js
-!@@||cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js
-
-! 밍키넷 동영상 및 썸네일 문제 해결
-mingki.net##div.col-md-3.col-sm-6.col-xs-6.text-center.banner_m
-mingki.net##img[style="display: none;"]
