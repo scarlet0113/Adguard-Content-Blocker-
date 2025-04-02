@@ -192,6 +192,7 @@ gmarket.co.kr#@#.js-impressionable
 gmarket.co.kr#@#.section__main-inner > .box__promotion .box__item > *
 seorinexpress.com#%#//scriptlet('set-constant', 'AM_PRODUCT', 'noopFunc')
 web.joongna.com#@#a[rel*="sponsored"]
+
 ! SFF 갤러리 규칙 (출처: https://m.dcinside.com/board/sff/995258)
 @@||192.168.$stealth
 @@||app.link^$stealth=dpi
@@ -256,24 +257,3 @@ mail.naver.com##div[style*="display: flex"]
   ##[style="margin-bottom: 20px;"].row.row-15
   ##li:has([target]:not([href*=bbs]))
 }
-
-
-! AV19 배너 광고 영역 제거
-[$domain=/av19/i]##.col-md-3.col-sm-6.col-xs-6.text-center.banner_m
-[$domain=/av19/i]##div#smart-channel-1
-[$domain=/av19/i]##div.mobile-banner
-[$domain=/av19/i]##div[style*="min-height: 1em"]
-
-! KBJSVIP 배너 광고 영역 제거
-[$domain=/kbjsvip/i]##.col-md-3.col-sm-6.col-xs-6.text-center.banner_m
-[$domain=/kbjsvip/i]##div.mobile-banner
-[$domain=/kbjsvip/i]##div[id="smart-channel-1"]
-[$domain=/kbjsvip/i]##div[style*="min-height: 1em"]
-[$domain=/kbjsvip/i]##section.row.clearfix.top_banner
-[$domain=/kbjsvip/i]##ins.eas6a97888e10
-[$domain=/kbjsvip/i]##ins.eas6a97888e17
-[$domain=/kbjsvip/i]##video
-
-! 밍키넷 예외 처리 (정상 콘텐츠 유지)
-@@||mingky.net^$media,document,script
-@@||mingky.net/video/*$subdocument
