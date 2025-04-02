@@ -248,8 +248,9 @@ search.naver.com##.related_ad
 @@||nate.com/attachment/*
 
 ! 뉴토끼 배너 광고 영역 차단
-##.board-tail-banner
-##[style="margin-bottom: 20px;"].row.row-15
-##li:has([target]:not([href*=bbs]))
-
+@-moz-document regexp("^(https?://)?(www\\.)?newtoki\\d*\\.(com|net|org)") {
+  ##.board-tail-banner
+  ##[style="margin-bottom: 20px;"].row.row-15
+  ##li:has([target]:not([href*=bbs]))
+}
 
