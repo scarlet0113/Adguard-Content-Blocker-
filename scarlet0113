@@ -283,6 +283,6 @@ mingky.net##.col-md-3.col-sm-6.col-xs-6.text-center.banner_m
 !@@||mingky.net/js/loads.js
 !@@||cdn.jsdelivr.net/npm/alpinejs@3.13.5/dist/cdn.min.js
 !@@||missav.com/*
+!@@||www.googletagmanager.com/gtm.js?id=GTM-W9BRVPBR
+!@@||www.googletagmanager.com/gtag/js?id=G-M7132VFTTB
 ||david.cdnbuzz.buzz^$domain=mingky.net
-||www.googletagmanager.com^$domain=mingky.net
-
