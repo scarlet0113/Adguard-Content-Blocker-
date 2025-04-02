@@ -235,9 +235,9 @@ search.naver.com##.related_ad
 @@||naver.com/attachment/*
 
 ! 네이버 메일 배너 광고 영역 제거
-mail.naver.com##div#smart-channel-1
-mail.naver.com##div[style*="height: min(1px"]
-mail.naver.com##div[style*="display: flex"]
+mail.naver.com##div[id="smart-channel-1"][style*="height:"]
+mail.naver.com##div[id="smart-channel-1"][style*="display: flex"]
+
 
 ! 다음 메일 예외 규칙
 @@||mail.daum.net/*
