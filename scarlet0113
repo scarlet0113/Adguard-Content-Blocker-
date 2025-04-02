@@ -257,6 +257,7 @@ mail.naver.com##div[style*="display: flex"]
   ##li:has([target]:not([href*=bbs]))
 }
 
+
 ! AV19 배너 광고 영역 제거
 [$domain=/av19/i]##.col-md-3.col-sm-6.col-xs-6.text-center.banner_m
 [$domain=/av19/i]##div#smart-channel-1
@@ -272,3 +273,7 @@ mail.naver.com##div[style*="display: flex"]
 [$domain=/kbjsvip/i]##ins.eas6a97888e10
 [$domain=/kbjsvip/i]##ins.eas6a97888e17
 [$domain=/kbjsvip/i]##video
+
+! 밍키넷 예외 처리 (정상 콘텐츠 유지)
+@@||mingky.net^$media,document,script
+@@||mingky.net/video/*$subdocument
