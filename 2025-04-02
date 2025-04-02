@@ -257,3 +257,18 @@ search.naver.com##.related_ad
   ##li:has([target]:not([href*=bbs]))
 }
 
+! AV19 배너 광고 영역 제거
+[$domain=/av19/i]##.col-md-3.col-sm-6.col-xs-6.text-center.banner_m
+[$domain=/av19/i]##div#smart-channel-1
+[$domain=/av19/i]##div.mobile-banner
+[$domain=/av19/i]##div[style*="min-height: 1em"]
+
+! KBJSVIP 배너 광고 영역 제거
+[$domain=/kbjsvip/i]##.col-md-3.col-sm-6.col-xs-6.text-center.banner_m
+[$domain=/kbjsvip/i]##div.mobile-banner
+[$domain=/kbjsvip/i]##div[id="smart-channel-1"]
+[$domain=/kbjsvip/i]##div[style*="min-height: 1em"]
+[$domain=/kbjsvip/i]##section.row.clearfix.top_banner
+[$domain=/kbjsvip/i]##ins.eas6a97888e10
+[$domain=/kbjsvip/i]##ins.eas6a97888e17
+[$domain=/kbjsvip/i]##video
