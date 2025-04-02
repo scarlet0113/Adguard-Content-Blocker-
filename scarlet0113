@@ -192,7 +192,6 @@ gmarket.co.kr#@#.js-impressionable
 gmarket.co.kr#@#.section__main-inner > .box__promotion .box__item > *
 seorinexpress.com#%#//scriptlet('set-constant', 'AM_PRODUCT', 'noopFunc')
 web.joongna.com#@#a[rel*="sponsored"]
-
 ! SFF 갤러리 규칙 (출처: https://m.dcinside.com/board/sff/995258)
 @@||192.168.$stealth
 @@||app.link^$stealth=dpi
