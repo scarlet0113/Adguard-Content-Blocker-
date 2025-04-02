@@ -1,5 +1,5 @@
 ! Title: 애드가드 갤러리 필터
-! Version: 2025-03-31
+! Version: 2025-04-02
 ! Description: 애드가드 필터의 일부 오차단, 안티 애드블록, 지우지 못한 광고를 해결합니다. For Adguard, uBo, Brave
 ! Homepage: https://m.dcinside.com/gallog/cent8649
 
@@ -15,7 +15,6 @@ naver.com,~chzzk.naver.com##+js(addEventListener-defuser, /contextmenu|selectsta
 
 ! 나무위키 최근변경, 나무뉴스 위젯 차단
 @@||namu.wiki^$generichide
-namu.wiki##div[class][id]:empty
 namu.wiki##li:has(time):not(*:has([href*='/raw/'])):upward(2)
 namu.wiki##span:has-text(더 보기):upward(2):has([target])
 
@@ -67,10 +66,10 @@ namu.wiki##span:has-text(더 보기):upward(2):has([target])
 [$domain=/^tvwiki\d+.com/]###bannerList
 [$domain=/^tvwiki\d+.com/]##[src*='/AD/']
 [$domain=/^yako[a-zA-Z0-9]*.[a-zA-Z]{2,}$/]###banner
-[$url=||torrent*.*^]##[alt*='광고'], [alt*='배너']
-[$url=||torrent*.*^]##[class*='carousel'][id]
-[$url=||torrent*.*^]##[href*='/ad'][target='_blank']:has(img)
-[$url=||torrent*.*^]##[target='_blank']:has([src$='.gif']):upward(1)
+[$domain=/torrent[a-zA-Z0-9]*.[a-zA-Z]{2,}$/]##[alt*='광고'], [alt*='배너']
+[$domain=/torrent[a-zA-Z0-9]*.[a-zA-Z]{2,}$/]##[class*='carousel'][id]
+[$domain=/torrent[a-zA-Z0-9]*.[a-zA-Z]{2,}$/]##[href*='/ad'][target='_blank']:has(img)
+[$domain=/torrent[a-zA-Z0-9]*.[a-zA-Z]{2,}$/]##[target='_blank']:has([src$='.gif']):upward(1)
 aagag.com#$#.la {position: absolute !important; left: -3000px !important; width: 60px !important; height: 20px !important; }
 auction.co.kr##.component--sponsor_link.component
 auction.co.kr##.vip-togetheritems
@@ -106,6 +105,7 @@ hasha.in##div[data-banner-id]
 hasha.in#%#//scriptlet('prevent-element-src-loading', 'script', 'private-stage.com')
 hitomi.la##.content > div:first-child:not(:has(picture))
 humoruniv.com##[id^='naver_adpost_wrap']
+instiz.net##.hot_under
 khan.co.kr##.mAd
 m.11st.co.kr###adBannerArea
 m.11st.co.kr###web2appPopup
@@ -136,10 +136,13 @@ ruliweb.com,ppomppu.co.kr##[id$='_ad']
 seoul.co.kr###rollingAdDiv
 talk.op.gg##[class]:has(> [href^='https://talk.op.gg/app-download'])
 tistory.com##figure:has([href^='https://link.coupang.com/'])
+yna.co.kr##.article > aside:has(yna-ad-script)
+yna.co.kr##.sticky[class^='aside-box']
 web.joongna.com##.pb-12
 web.joongna.com##div:has([alt='ad']):has([target^='_bla']):not(:has(h2))
 web.joongna.com##li:has(span:has-text(/^광고/))
 windowsforum.kr##.ad
+||adcr.naver.com^$all,domain=~naver.com
 ||apps.m.sooplive.co.kr^$popup
 ||arca.live/static/assets/js/adult.min.js
 ||cdn.inappnews.net^
@@ -172,6 +175,7 @@ fmkorea.com#%#//scriptlet('set-constant', 'link_url', '')
 @@||ad*.cgv.co.kr^
 @@||ad-creative.pstatic.net^$app=com.nhn.android.search
 @@||ad-img.gmarket.com^$domain=gmarket.co.kr|auction.co.kr
+@@||adcr.naver.com^$app=com.nhn.android.search
 @@||app.appsflyer.com^$domain=ofw.adison.co
 @@||client-rapi-missav.recombee.com^
 @@||co.kr^$stealth=dpi
@@ -189,7 +193,6 @@ gmarket.co.kr#@#.js-impressionable
 gmarket.co.kr#@#.section__main-inner > .box__promotion .box__item > *
 seorinexpress.com#%#//scriptlet('set-constant', 'AM_PRODUCT', 'noopFunc')
 web.joongna.com#@#a[rel*="sponsored"]
-
 ! SFF 갤러리 규칙 (출처: https://m.dcinside.com/board/sff/995258)
 @@||192.168.$stealth
 @@||app.link^$stealth=dpi
