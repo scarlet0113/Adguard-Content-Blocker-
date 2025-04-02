@@ -1,3 +1,4 @@
+! 뉴토끼 배너 영역 제거
 @-moz-document regexp("^(https?://)?(www\\.)?newtoki\\d*\\.(com|net|org)") {
   ##.board-tail-banner
   ##[style="margin-bottom: 20px;"].row.row-15
